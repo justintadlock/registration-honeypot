@@ -6,6 +6,8 @@
  * Version:     1.0.0-beta-1
  * Author:      Justin Tadlock
  * Author URI:  http://justintadlock.com
+ * Text Domain: registration-honeypot
+ * Domain Path: /languages
  */
 
 /**
@@ -35,10 +37,22 @@ final class Registration_Honeypot {
 	 */
 	public function __construct() {
 
+		add_action( 'plugins_loaded',      array( $this, 'i18n'           ), 2  );
 		add_action( 'login_head',          array( $this, 'print_styles'   )     );
 		add_action( 'register_form',       array( $this, 'register_form'  ), 99 );
 		add_action( 'register_post',       array( $this, 'check_honeypot' ), 0  );
 		add_action( 'login_form_register', array( $this, 'check_honeypot' ), 0  );
+	}
+
+	/**
+	 * Loads the translation files.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
+	function i18n() {
+		load_plugin_textdomain( 'registration-honeypot', false, 'registration-honeypot/languages' );
 	}
 
 	/**

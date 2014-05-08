@@ -1,0 +1,40 @@
+# Copyright (C) 2014 Registration Honeypot
+# This file is distributed under the same license as the Registration Honeypot package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Registration Honeypot 1.0.0-beta-1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/registration-honeypot\n"
+"POT-Creation-Date: 2014-05-08 22:01:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: registration-honeypot.php:55
+msgid "You filled out a form field that was created to stop spammers. Please go back and try again or contact the site administrator if you feel this was in error."
+msgstr ""
+
+#: registration-honeypot.php:82
+msgid "Only fill in if you are not human"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Registration Honeypot"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://themehybrid.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Stops most spambots from registering on sites that have open user registration. This plugin uses a simple honeypot method of stopping registrations by creating a hidden field that real people would not see but that auto-spammers would fill out (sticking their hand in the honeypot)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Justin Tadlock"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://justintadlock.com"
+msgstr ""
