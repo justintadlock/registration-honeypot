@@ -81,6 +81,17 @@ final class Registration_Honeypot {
 	<?php }
 
 	/**
+	 * Outputs custom jQuery to make sure the honeypot field is empty by default.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function print_scripts() { ?>
+		<script type="text/javascript">jQuery( '#th_rh_name' ).val( '' );</script>
+	<?php }
+
+	/**
 	 * Adds a hidden field that spambots will fill out but normal humans won't see.  In the off-chance 
 	 * that a real human has CSS disabled on their browser, the label should let them know not to fill 
 	 * out this form field.  This field will be checked to see if the visitor/spambot entered text into 
@@ -90,7 +101,11 @@ final class Registration_Honeypot {
 	 * @access public
 	 * @return void
 	 */
-	public function register_form() { ?>
+	public function register_form() {
+
+		/* Load scripts for register form. */
+		wp_enqueue_script( 'jquery' );
+		add_action( 'login_footer', array( $this, 'print_scripts' ), 25 ); ?>
 
 		<p class="th_rh_name_field">
 			<label for="th_rh_name"><?php _e( 'Only fill in if you are not human', 'registration-honeypot' ); ?></label><br />
