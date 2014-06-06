@@ -3,7 +3,7 @@
  * Plugin Name: Registration Honeypot
  * Plugin URI:  http://themehybrid.com
  * Description: Stops most spambots from registering on sites that have open user registration. This plugin uses a simple honeypot method of stopping registrations by creating a hidden field that real people would not see but that auto-spammers would fill out (sticking their hand in the honeypot).
- * Version:     1.1.0-alpha-1
+ * Version:     1.0.0
  * Author:      Justin Tadlock
  * Author URI:  http://justintadlock.com
  * Text Domain: registration-honeypot
