@@ -46,7 +46,7 @@ final class Registration_Honeypot {
 		add_action( 'login_form_register', array( $this, 'check_honeypot' ), 0  );
 
 		/* BuddyPress plugin regisration. */
-		add_action( 'bp_before_register_page',               array( $this, 'print_styles'   ),    );
+		add_action( 'bp_before_register_page',               array( $this, 'print_styles'   )     );
 		add_action( 'bp_before_registration_submit_buttons', array( $this, 'register_form'  ), 99 );
 		add_action( 'bp_signup_pre_validate',                array( $this, 'check_honeypot' ), 0  );
 	}
