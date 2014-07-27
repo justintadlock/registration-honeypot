@@ -66,7 +66,7 @@ final class Registration_Honeypot {
 	public function check_honeypot() {
 
 		if ( isset( $_POST['th_rh_name'] ) && !empty( $_POST['th_rh_name'] ) )
-			wp_die( __( 'You filled out a form field that was created to stop spammers. Please go back and try again or contact the site administrator if you feel this was in error.', 'registration-honeypot' ) );
+			wp_die( __( 'You filled out a form field that was created to stop spammers. Please go back and try again or contact the site administrator if you feel this was an error.', 'registration-honeypot' ) );
 	}
 
 	/**
