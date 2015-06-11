@@ -115,7 +115,7 @@ final class Registration_Honeypot {
 		add_action( 'login_footer', array( $this, 'print_scripts' ), 25 ); ?>
 
 		<p class="th_rh_name_field">
-			<label for="th_rh_name"><?php _e( 'Only fill in if you are not human', 'registration-honeypot' ); ?></label><br />
+			<label for="th_rh_name"><?php _e( 'Only fill in if you are not human', 'registration-honeypot' ); ?><br />
 			<input type="text" name="th_rh_name" id="th_rh_name" class="input" value="" size="25" autocomplete="off" /></label>
 		</p>
 	<?php }
